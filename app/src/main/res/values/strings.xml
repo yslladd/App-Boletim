@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Boletim</string>
+    <string name="apply_note">Aplicar Nota</string>
+    <string name="look_note">Olhar Nota</string>
+    <string name="matter">Matéria</string>
+    <string name="student">Aluno</string>
+    <string name="note">Nota</string>
+    <string name="team">Turma</string>
+    <string name="code">Código</string>
+
+</resources>
