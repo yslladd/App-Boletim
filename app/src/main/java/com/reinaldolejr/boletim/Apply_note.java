@@ -2,9 +2,12 @@ package com.reinaldolejr.boletim;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.telephony.SmsManager;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -103,6 +106,7 @@ public class Apply_note extends Activity {
                     try {
                         HttpResponse response = httpClient.execute(httpPost);
                         HttpEntity ent = response.getEntity();
+
                         code.setText(EntityUtils.toString(ent));
 
                         Toast toast = Toast.makeText(getApplicationContext(), "Salvo com sucesso!", Toast.LENGTH_SHORT);

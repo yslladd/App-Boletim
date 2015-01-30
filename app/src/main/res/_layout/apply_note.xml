@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Look_note"
-    android:minHeight="@dimen/activity_horizontal_margin">
+    android:weightSum="1"
+    tools:context=".Apply_note">
 
     <TextView
         android:layout_width="fill_parent"
@@ -12,13 +12,13 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/matter"
         android:id="@+id/textView_matter"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:longClickable="false" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText_matter"
-        android:editable="false" />
+        android:id="@+id/editText_matter" />
 
     <TextView
         android:layout_width="fill_parent"
@@ -26,23 +26,23 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/team"
         android:id="@+id/textView_team"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:longClickable="false" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText_team"
-        android:editable="false" />
+        android:id="@+id/editText_team" />
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="335dp"
+        android:layout_height="248dp"
         android:id="@+id/scrollView"
         android:layout_gravity="center_horizontal" >
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical" android:layout_width="match_parent"
+            android:orientation="vertical"  android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:weightSum="1">
 
@@ -56,13 +56,13 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/student"
                 android:id="@+id/textView_student1"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:longClickable="false" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText_student1"
-                android:editable="false" />
+                android:id="@+id/editText_student1" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -70,14 +70,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/note"
                 android:id="@+id/textView_note1"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:longClickable="false" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:id="@+id/editText_note1"
-                android:editable="false" />
+                android:id="@+id/editText_note1" />
 
             <Space
                 android:layout_width="match_parent"
@@ -89,13 +89,13 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/student"
                 android:id="@+id/textView_student2"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:longClickable="false" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText_student2"
-                android:editable="false" />
+                android:id="@+id/editText_student2" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -103,14 +103,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/note"
                 android:id="@+id/textView_note2"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:longClickable="false" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:id="@+id/editText_note2"
-                android:editable="false" />
+                android:id="@+id/editText_note2" />
 
             <Space
                 android:layout_width="match_parent"
@@ -122,13 +122,13 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/student"
                 android:id="@+id/textView_student3"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:longClickable="false" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText_student3"
-                android:editable="false" />
+                android:id="@+id/editText_student3" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -136,14 +136,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/note"
                 android:id="@+id/textView_note3"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:longClickable="false" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:id="@+id/editText_note3"
-                android:editable="false" />
+                android:id="@+id/editText_note3" />
 
             <Space
                 android:layout_width="match_parent"
@@ -155,13 +155,13 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/student"
                 android:id="@+id/textView_student4"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:longClickable="false" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText_student4"
-                android:editable="false" />
+                android:id="@+id/editText_student4" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -169,14 +169,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/note"
                 android:id="@+id/textView_note4"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:longClickable="false" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:id="@+id/editText_note4"
-                android:editable="false" />
+                android:id="@+id/editText_note4" />
 
             <Space
                 android:layout_width="match_parent"
@@ -188,13 +188,13 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/student"
                 android:id="@+id/textView_student5"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:longClickable="false" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText_student5"
-                android:editable="false" />
+                android:id="@+id/editText_student5" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -202,17 +202,40 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/note"
                 android:id="@+id/textView_note5"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:longClickable="false" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:id="@+id/editText_note5"
-                android:editable="false" />
+                android:id="@+id/editText_note5" />
 
         </LinearLayout>
     </ScrollView>
 
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/textView_code"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:id="@+id/button_save"
+            android:layout_gravity="left|center_vertical" />
+
+    </FrameLayout>
 
 </LinearLayout>

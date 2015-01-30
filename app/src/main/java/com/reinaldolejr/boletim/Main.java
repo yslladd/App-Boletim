@@ -70,7 +70,6 @@ public class Main extends Activity {
                             toast.show();
                         }
 
-
                     }
                 });
             }

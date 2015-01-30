@@ -11,20 +11,19 @@
 
         <activity
             android:name=".Main"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Apply_note"></activity>
-        <activity android:name=".Look_note"></activity>
-        <activity android:name=".Dialog_confirm_code"></activity>
+        <activity android:name=".Apply_note" android:screenOrientation="portrait" ></activity>
+        <activity android:name=".Look_note" android:screenOrientation="portrait" ></activity>
+        <activity android:name=".Dialog_confirm_code" android:screenOrientation="portrait" ></activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 </manifest>

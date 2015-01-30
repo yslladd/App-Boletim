@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Look_note"
     android:minHeight="@dimen/activity_horizontal_margin">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -35,20 +44,10 @@
         android:editable="false" />
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="335dp"
-        android:id="@+id/scrollView"
-        android:layout_gravity="center_horizontal" >
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical" android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:weightSum="1">
-
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="25dp" />
+                android:layout_height="35dp"
+                android:focusable="false" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -75,7 +74,6 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
                 android:id="@+id/editText_note1"
                 android:editable="false" />
 
@@ -108,7 +106,6 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
                 android:id="@+id/editText_note2"
                 android:editable="false" />
 
@@ -141,7 +138,6 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
                 android:id="@+id/editText_note3"
                 android:editable="false" />
 
@@ -174,7 +170,6 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
                 android:id="@+id/editText_note4"
                 android:editable="false" />
 
@@ -207,7 +202,6 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
                 android:id="@+id/editText_note5"
                 android:editable="false" />
 
@@ -215,4 +209,4 @@
     </ScrollView>
 
 
-</LinearLayout>
+</FrameLayout>

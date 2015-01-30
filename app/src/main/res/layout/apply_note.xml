@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
     tools:context=".Apply_note">
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"  android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -35,20 +47,10 @@
         android:id="@+id/editText_team" />
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="335dp"
-        android:id="@+id/scrollView"
-        android:layout_gravity="center_horizontal" >
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical"  android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:weightSum="1">
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="25dp" />
+                android:layout_height="35dp" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -215,11 +217,10 @@
     </ScrollView>
 
 
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal|bottom">
 
         <TextView
             android:layout_width="wrap_content"
@@ -234,8 +235,8 @@
             android:layout_height="wrap_content"
             android:text="Salvar"
             android:id="@+id/button_save"
-            android:layout_gravity="left|center_vertical" />
+            android:layout_gravity="right|center_vertical" />
 
     </FrameLayout>
 
-</LinearLayout>
+</FrameLayout>
